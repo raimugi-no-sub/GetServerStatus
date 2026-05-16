@@ -1,0 +1,24 @@
+command:
+  description: "Shows server status"
+player:
+  count: "Current player count: %d players"
+  none: "No players are online"
+  list: "Online players: %s"
+embed:
+  player-count: "Current player count"
+  player-count-value: "%d players"
+  online-players: "Online players"
+  none: "No players are online"
+metrics:
+  tps: "TPS"
+  mspt: "MSPT"
+  memory: "Memory usage"
+  cpu: "CPU usage"
+  cpu-unavailable: "N/A"
+chat:
+  tps: "TPS: %.2f"
+  mspt: "MSPT: %.2f"
+  memory: "Memory usage: %s"
+  cpu: "CPU usage: %s"
+log:
+  discord-disabled: "DiscordSRV is not installed. Discord integration is disabled."

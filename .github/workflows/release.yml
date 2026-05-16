@@ -2,8 +2,8 @@ name: Release
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 jobs:
   build:
@@ -27,14 +27,10 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
-      - name: Get plugin version from Gradle
-        id: get_version
-        run: echo "version=$(./gradlew properties -q | awk '/^version:/ {print $2}')" >> "$GITHUB_OUTPUT"
-
       - name: Release
         uses: softprops/action-gh-release@v3
         with:
-          name: Release v${{ steps.get_version.outputs.version }}
-          tag_name: v${{ steps.get_version.outputs.version }}
+          name: Release ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
           generate_release_notes: true
           files: build/libs/*.jar

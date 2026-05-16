@@ -1,0 +1,24 @@
+command:
+  description: "サーバーステータスを表示します"
+player:
+  count: "現在のプレイヤー数: %d人"
+  none: "オンラインのプレイヤーはいません"
+  list: "オンラインプレイヤー: %s"
+embed:
+  player-count: "現在のプレイヤー数"
+  player-count-value: "%d人"
+  online-players: "オンラインプレイヤー"
+  none: "オンラインのプレイヤーはいません"
+metrics:
+  tps: "TPS"
+  mspt: "MSPT"
+  memory: "メモリ使用量"
+  cpu: "CPU使用率"
+  cpu-unavailable: "取得不可"
+chat:
+  tps: "TPS: %.2f"
+  mspt: "MSPT: %.2f"
+  memory: "メモリ使用量: %s"
+  cpu: "CPU使用率: %s"
+log:
+  discord-disabled: "DiscordSRV が導入されていません。Discord 連携は無効です。"

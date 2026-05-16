@@ -6,7 +6,6 @@ authors:
   - point
   - rakku
 depend:
-  - DiscordSRV
   - spark
-loadbefore:
+softdepend:
   - DiscordSRV

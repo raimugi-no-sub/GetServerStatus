@@ -4,7 +4,9 @@ plugins {
 }
 
 group = 'net.point7845'
-version = '1.0'
+
+def rawVersion = findProperty('version') ?: System.getenv('GITHUB_REF_NAME') ?: 'dev'
+version = rawVersion.toString().replaceFirst(/^v/, '')
 
 repositories {
     mavenCentral()
